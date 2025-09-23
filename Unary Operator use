@@ -1,0 +1,13 @@
+package basicjava;
+public class biodata{
+public static void main(String[] args){
+    int x=5;
+    int Result1 = +x ;
+    int Result2 =-x ;
+    System.out.println("Enter the 1st result is :"+Result1);
+    
+    System.out.println("Enter the 2nd result is :"+Result2);
+}
+}
+//Enter the 1st result is :+5
+//Enter the 2nd result is :-5
