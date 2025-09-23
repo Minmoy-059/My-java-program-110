@@ -1,0 +1,13 @@
+package basicjava;
+import java.util.Scanner;
+public class biodata{
+    public static void main(String[] args){
+        Scanner input= new Scanner(System.in);
+        float far,cel;
+        System.out.println("Enter the value of cel :");
+        cel =input.nextFloat();
+        far = (1.8) * cel + 32;
+        System.out.println("Enter the value of far :"+far);
+        
+    }
+}
