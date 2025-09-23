@@ -1,0 +1,56 @@
+package basicjava;
+import java.util.Scanner;
+public class biodata{
+    public static void main(String[] args){
+        Scanner input= new Scanner(System.in);
+        
+        int num1,num2 ;
+        System.out.println("Enter the first number:");
+        num1 = input.nextInt();
+        System.out.println("Enter the sceond number:");
+        num2=input.nextInt();
+        
+        System.out.println("The result is: " +num1 + " & " +num2);
+        
+        int sum =num1 + num2 ;
+        System.out.println("The sum is: " +sum);
+        int sub =num1 - num2 ;
+        System.out.println("The sub is: " +sub);
+        int multi =num1 * num2 ;
+        System.out.println("The multi is: " +multi);
+        double devider = (double) num1 / num2 ;
+        System.out.println("The devider is: " +devider);
+        int Remander =num1 % num2 ;
+        System.out.println("The Remander is: " +Remander);
+        
+        num1= num1 * 5 ;
+        System.out.println("The final Value is: " +num1);
+        num2= num2 * num1 ;
+        System.out.println("The main Value is: " +num2);
+        
+        //Triangle Value
+        double base,height,area1 ;
+        base = num1;
+        height = num2 ;
+        
+        area1 = 0.5 * base * height ;
+        System.out.println("The Triangle area is: " +area1);
+        
+        //RECTANGLE value
+        double length,width,area2 ;
+        length =num1;
+        width =num2;
+        
+        area2 = length * width ;
+        System.out.println("The rectanglar area is: " +area2);
+    
+       //cercle value
+       double radious,area3;
+       
+       radious =num1;
+       area3 =3.1416 * radious * radious ;
+       
+       System.out.println("The cercle area is: " +area3);
+       
+    }
+}
