@@ -7,9 +7,9 @@ double Fahr, cel ;
 System.out.println("Enter the value of Fahrenheit :");
 Fahr =input.nextDouble();
 
-cel =(0.56) * Fahr +32 ;
+cel =(0.56) * (Fahr - 32) ;
 System.out.println("Enter the value of celsius:" +cel);
 }
 }
-//(ans) Enter the value of Fahrenheit :46
-//Enter the value of celsius :57.760000000000005
+//(ans) Enter the value of Fahrenheit :45
+//Enter the value of celsius :7.280000000000001
