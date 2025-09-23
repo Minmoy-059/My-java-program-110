@@ -1,0 +1,21 @@
+package basicjava;
+public class biodata{
+public static void main(String[] args){
+    int x=5;
+    int y1,y2,y3,y4;
+    y1 =++x;//x=6;
+    y2=x++;//x=6;
+    
+    y3=--x;//again x=7;x=6;
+    y4=x--;//x=6;
+    
+    System.out.println("Enter the 1st result is :"+y1);
+    System.out.println("Enter the 2nd result is :"+y2);
+    System.out.println("Enter the 3rd result is :"+y3);
+    System.out.println("Enter the 4th result is :"+y4);
+}
+}
+//Enter the 1st result is :6
+//Enter the 2nd result is :6
+//Enter the 3rd result is :6
+//Enter the 4th result is :6
