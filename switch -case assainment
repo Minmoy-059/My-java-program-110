@@ -1,0 +1,30 @@
+package basicjava;
+import java.util.Scanner;
+public class MyBiodata{
+    public static void main(String[] args){
+        int option;
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter the option:");
+        option =input.nextInt();
+        
+      switch(option){
+          case 1:
+              System.out.println("The language is Bangla");
+              break;
+          case 2:
+              System.out.println("The language is Hindi");
+              break;
+          case 3:
+              System.out.println("The language is Urdu");
+              break;
+          case 4:
+              System.out.println("The language is English");
+              break;
+          default:
+              System.out.println("Sorry! You aren't enter a digit ");
+              break;
+          }
+      
+        
+    }
+}
