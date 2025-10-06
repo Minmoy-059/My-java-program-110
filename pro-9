@@ -1,0 +1,23 @@
+package Main;
+import java.util.Scanner;
+
+public class Pro9 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in); // Create Scanner inside main
+
+        System.out.println("Enter the minutes:");
+        int minutes = input.nextInt();
+
+        // Calculate years and days from minutes
+        int minutesInDay = 24 * 60;
+        int minutesInYear = 365 * minutesInDay;
+
+        int years = minutes / minutesInYear;
+        int remainingMinutes = minutes % minutesInYear;
+        int days = remainingMinutes / minutesInDay;
+
+        System.out.println(minutes + " minutes is approximately " + years + " years and " + days + " days.");
+
+        input.close();
+    }
+}
