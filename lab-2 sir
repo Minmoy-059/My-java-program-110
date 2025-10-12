@@ -1,0 +1,38 @@
+package Main;
+import java.util.Scanner;
+public class NegativeDemo {
+
+	public static void main(String[] args) {
+		Scanner input =new Scanner(System.in);
+		int num;
+		
+		 while(true) {
+       
+			System.out.println("Enter the number is:");
+			
+			num=input.nextInt();
+			
+			if (num<0) {
+				System.out.println("Progrem end");
+				break;
+			}
+			
+			System.out.println("You Entered :"+num);
+			
+			int num=-1;
+			do {
+				System.out.println("Enter the number is:");
+				num=input.nextInt();
+				if(input >0) {
+					System.out.println("Enter the number is:");
+					
+				}
+				
+				
+			}
+			
+	}
+		 
+	}
+
+}
