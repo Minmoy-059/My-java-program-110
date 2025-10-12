@@ -1,0 +1,25 @@
+// max & min value
+package basicjava;
+import java.util.Scanner;
+public class main{
+    public static void main(String[] args){
+        Scanner input =new Scanner(System.in);
+        int x , y ,max;
+        System.out.println("Enter the first and Secound number:");
+        x=input.nextInt();
+        y=input.nextInt();
+        
+        System.out.println("The max value is:");
+        System.out.println(Math.max(x, y));
+        
+        System.out.println("The min value is:");
+        System.out.println(Math.min(x, y));
+    
+    }
+}
+/*(Enter the first and Secound number:
+12 96
+The max value is:
+96
+The min value is:
+12)
