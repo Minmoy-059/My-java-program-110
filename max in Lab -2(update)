@@ -1,0 +1,23 @@
+package Main;
+import java.util.Scanner;
+public class pro4 {
+    
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+       
+		int num1,num2,num3;
+		
+		System.out.println("Enter the value of first number is :");
+		num1=input.nextInt();
+		
+		System.out.println("Enter the value of Second number is :");
+		num2=input.nextInt();
+		
+		System.out.println("Enter the value of Third number is :");
+		num3=input.nextInt();
+		
+		int max=num1;
+		if(b>)
+	}
+
+}
