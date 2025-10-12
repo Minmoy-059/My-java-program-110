@@ -1,0 +1,36 @@
+package basicjava;
+import java.util.Scanner;
+public class main{
+    public static void main(String[] args){
+        Scanner input =new Scanner(System.in);
+        int a,b,max,min;
+        System.out.println("Enter the first number:");
+        a=input.nextInt();
+        
+        System.out.println("Enter the Secound number:");
+        b=input.nextInt();
+        
+        int absolute = Math.abs(b);
+        System.out.println("The absolute value is:" +absolute);
+        
+        
+        System.out.println("The max number is:");
+        System.out.println(Math.max(a, b));
+        
+        System.out.println("The min number is:");
+        System.out.println(Math.min(a, b));
+        
+        
+       
+    }
+}
+/*(Enter the first number:
+79
+Enter the Secound number:
+-69
+The absolute value is:69
+The max number is:
+79
+The min number is:
+-69
+)
