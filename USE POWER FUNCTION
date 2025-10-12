@@ -1,0 +1,13 @@
+// USE POWER FUNCTION 
+package basicjava;
+public class biodata{
+    public static void main(String[] args){
+        int a=5;
+        int b=4;
+        double power = Math.pow(a, b);
+        
+        System.out.println("The value of the power is:"+power);
+        
+    
+    }
+}
