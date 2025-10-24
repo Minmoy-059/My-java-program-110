@@ -1,0 +1,67 @@
+package Main; 
+
+import java.util.Scanner;
+
+public class AverageCalculator {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+	
+		double num; 
+		int sum = 0;
+		int count = 0; 
+		
+		while(true) {
+			System.out.print("Enter number (or -1 to finish): ");
+			
+			if (input.hasNextDouble()) {
+				num = input.nextDouble();
+			
+				if(num == -1) {
+					System.out.println(" Input finished. Calculating results...");
+					break; 
+				}
+				
+				sum += num;
+				count++;
+			} else {
+			
+				System.out.println("⚠️ Invalid input! Please enter a whole number.");
+				
+			}
+		} 
+		
+		System.out.println("--- Final Results ----");
+
+		if(count > 0) {
+			
+			double average = sum / count ;
+			System.out.println("Total numbers entered: " + count );
+			System.out.println("Total sum is: " + sum);
+			
+			System.out.println("The average value is: "+average);
+		} else {
+			System.out.println(" No valid numbers were entered to calculate an average.");
+		}
+		
+	}
+} 
+*/Enter number (or -1 to finish): 25
+Enter number (or -1 to finish): 555
+Enter number (or -1 to finish): 64544
+Enter number (or -1 to finish): 54464556
+Enter number (or -1 to finish): 66666536
+Enter number (or -1 to finish): 666666
+Enter number (or -1 to finish): 8558
+Enter number (or -1 to finish): 555
+Enter number (or -1 to finish): 555
+Enter number (or -1 to finish): 555
+Enter number (or -1 to finish): 55
+Enter number (or -1 to finish): -1
+ Input finished. Calculating results...
+--- Final Results ----
+Total numbers entered: 11
+Total sum is: 121873160
+The average value is: 1.1079378E7
+*/
