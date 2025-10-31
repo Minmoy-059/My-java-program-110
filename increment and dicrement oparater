@@ -1,0 +1,53 @@
+public class Main {
+    public static void main(String[] args) {
+        // Initial values
+        int total = 0;
+        int count = 5;
+
+        System.out.println("Initial values:");
+        System.out.println("total = " + total + ", count = " + count);
+        System.out.println("--------------------------------");
+
+        // Example 1: Postfix increment (count++)
+        total = count++;
+        System.out.println("Example 1: Postfix increment (total = count++)");
+        System.out.println("total = " + total + ", count = " + count); // total=5, count=6
+        System.out.println("--------------------------------");
+
+        // Example 2: Prefix increment (++count)
+        total = ++count;
+        System.out.println("Example 2: Prefix increment (total = ++count)");
+        System.out.println("total = " + total + ", count = " + count); // total=7, count=7
+        System.out.println("--------------------------------");
+
+        // Example 3: Postfix decrement (count--)
+        total = count--;
+        System.out.println("Example 3: Postfix decrement (total = count--)");
+        System.out.println("total = " + total + ", count = " + count); // total=7, count=6
+        System.out.println("--------------------------------");
+
+        // Example 4: Prefix decrement (--count)
+        total = --count;
+        System.out.println("Example 4: Prefix decrement (total = --count)");
+        System.out.println("total = " + total + ", count = " + count); // total=5, count=5
+        System.out.println("--------------------------------");
+
+        // Example 5: Using prefix and postfix in a loop
+        System.out.println("Example 5: Using postfix increment in a loop");
+        count = 3; // reset count
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Iteration " + i + ": Before increment, count = " + count);
+            count++;
+            System.out.println("After count++, count = " + count);
+        }
+        System.out.println("--------------------------------");
+
+        // Example 6: Complex expression with both prefix and postfix
+        count = 3;
+        total = ++count + count++ + --count + count--;
+        System.out.println("Example 6: Complex expression (++count + count++ + --count + count--)");
+        System.out.println("Final total = " + total); // 16
+        System.out.println("Final count = " + count); // 3
+        System.out.println("--------------------------------");
+    }
+}
