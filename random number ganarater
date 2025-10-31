@@ -1,0 +1,29 @@
+package Main;
+import java.util.Scanner;
+
+public class Gpt_result {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+       
+       int number;
+       int randInt =(int)(Math.random()*10)+1;
+       
+       System.out.println("Enter the Numer is :");
+        number =input.nextInt();
+       
+       if(randInt == number ) {
+    	   System.out.println("Congartulation!You guess write number");
+    	   
+       }else{
+    	   System.out.println("invalied guess number!The correct number was: " + randInt);
+       }
+       
+    }
+}
+//Enter the Numer is :
+3
+Congartulation!You guess write number
+//
+Enter the Numer is :
+8
+invalied guess number!The correct number was: 10
