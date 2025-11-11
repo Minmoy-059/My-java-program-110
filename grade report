@@ -1,0 +1,39 @@
+import java.util.*;
+public class Pro2 {
+
+	public static void main(String[] args) {
+		Scanner input =new Scanner(System.in);
+		
+        	int  category;
+        	int gradeReport;
+        	System.out.println("Enter the grade number is :");
+        	gradeReport =input.nextInt();
+        	
+            category =  gradeReport /10;
+            System.out.print("That grade is: ");
+            switch (category){
+            case 10 :
+            	System.out.print("a perfect score, well done.");
+            	break;
+            case 9 :
+            	System.out.print("well above average. Excellent.");
+            	break;
+            case 8:
+            	System.out.print("above average. Nice job.");
+            	break;
+            case 7:
+            	System.out.print("average.");
+            	break;
+            case 6:	
+            	System.out.print("below average. Do better!");
+            	break;
+            default:
+                System.out.print("not passing");
+                break;
+            }
+        	
+
+
+	}
+
+}
