@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class multipleNumber {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter a positive number: ");
+        int positiveNum = input.nextInt();
+        while (positiveNum <= 0) {
+            System.out.print("Invalid entry. Enter a positive number: ");
+            positiveNum = input.nextInt();
+        }
+
+        System.out.print("Enter the upper limit: ");
+        int upperLimit = input.nextInt();
+        while (upperLimit < positiveNum) {
+            System.out.print("Upper limit must be at least the positive number. Enter again: ");
+            upperLimit = input.nextInt();
+        }
+
+        System.out.println("Multiples of " + positiveNum + " up to " + upperLimit + ":");
+
+        int count = 0;  
+
+        for (int num = positiveNum; num <= upperLimit; num += positiveNum) {
+            System.out.print(num + "\t");
+            count++;
+            if (count % 5 == 0) {
+                System.out.println();  
+            }
+        }
+
+  
+        if (count % 5 != 0) {
+            System.out.println();
+        }
+
+        
+    }
+}
