@@ -1,0 +1,33 @@
+import java.util.*;
+public class Pro2 {
+
+	public static void main(String[] args) {
+		Scanner input =new Scanner(System.in);
+		
+        	double a,b,c;
+        	System.out.println("Enter the Quadratic value a:");
+        	a=input.nextDouble();
+        	System.out.println("Enter the Quadratic value b:");
+        	b=input.nextDouble();
+        	System.out.println("Enter the Quadratic value c:");
+        	c=input.nextDouble();
+        	
+        	
+        	double D = Math.pow(b, 2) - (4*a*c);
+        	  
+        	double Root1 =((-1*b)+Math.sqrt(D))/(2*a);
+        	double Root2 =((-1 * b)-Math.sqrt(D))/(2*a);
+        	System.out.println("Enter the 1 st root1 is :"+Root1);
+        	System.out.println("Enter the 1 st root2 is :"+Root2);
+        	  
+	}
+
+}
+//(Enter the Quadratic value a:
+//3
+//Enter the Quadratic value b:
+//8
+//Enter the Quadratic value c:
+//4
+//Enter the 1 st root1 is :-0.6666666666666666
+//Enter the 1 st root2 is :-2.0)
