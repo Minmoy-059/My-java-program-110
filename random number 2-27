@@ -1,0 +1,29 @@
+import java.util.*;
+public class Pro1 {
+
+	public static void main(String[] args) {
+		Scanner input =new Scanner(System.in);
+		
+		int min =2;
+		int max =27;
+		Random generate = new Random() ;
+		int guess,randomNumber;
+		
+		randomNumber =generate.nextInt(max -min +1)+min;
+		
+		System.out.println("Mass the random number to guess number.The guess number is :");
+		
+		guess =input.nextInt();
+		
+		if(guess == randomNumber) {
+			System.out.println("Congratulation ! You are win the match.Prefect guess");
+			
+		}else {
+			System.out.println("Worng guess!The correct number is :"+randomNumber);
+		}
+		
+	
+		
+	}
+
+}
