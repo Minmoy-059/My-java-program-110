@@ -1,0 +1,42 @@
+package Lab7;
+
+public class BankAccount {
+	private int accountNumber;
+	private String accountHolderName;
+	private double balance ;
+	
+	public BankAccount(int accountNumber, String accountHolderName, int balance) {
+		this.accountNumber =accountNumber;
+		this.accountHolderName =accountHolderName;
+		this.balance =0.0 ;
+	}
+	public void deposit(double amount ) {
+		if (amount >0) {
+			balance += amount;
+			System.out.println("Deposit Balance is :"+amount+" sucessfull");
+		}else {
+			System.out.println("Invalied deposit amount.Please enter a positive value .");
+		}
+	}
+	public void Withdraw(double amount){
+		
+		if(amount>0 && amount <= balance) {
+		balance -=amount;
+		System.out.println("Withdraw Balance is :"+amount+" sucessfull");
+	}else {
+		System.out.println("Invalied deposit amount.Please enter a positive value .");
+	}
+	
+	    }
+
+     public double getBalance() {
+    	 return balance ;
+     }
+     public void displayAccountInfo() {
+    	 System.out.println("Account number : "+accountNumber);
+    	 System.out.println("Account Holder number : "+accountHolderName);
+    	 System.out.println("Balance : "+balance);
+    	 
+     }
+}
+
