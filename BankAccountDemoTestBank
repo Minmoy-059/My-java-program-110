@@ -1,0 +1,17 @@
+package Lab7;
+
+public class TestBank {
+
+	public static void main(String[] args) {
+		
+		BankAccount acc = new BankAccount(101, "Rahim", 500);
+
+        acc.displayAccountInfo();
+        acc.deposit(200);
+        acc.Withdraw(100);
+
+        System.out.println("Current Balance: " + acc.getBalance());
+
+	}
+
+}
