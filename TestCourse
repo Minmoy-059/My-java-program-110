@@ -1,0 +1,27 @@
+package Main;
+
+public class TestCourse {
+
+	
+
+	public static void main(String[] args) {
+		 CourseClass c = new CourseClass("Java Programming");
+		 
+		 c.addStudent("Rahim");
+		 c.addStudent("Karim");
+		 c.addStudent("Sajib");
+		 
+		 c.dropStudent("Rahim");
+		 
+		 System.out.println("Course Name: " + c.getCourseName());
+	     System.out.println("Total Students: " + c.getNumberOfStudents());
+
+	     String[] list = c.getStudents();
+
+	     System.out.println("Students:");
+         for (int i = 0; i < c.getNumberOfStudents(); i++) {
+            System.out.println(list[i]);
+    }
+	}
+
+}
