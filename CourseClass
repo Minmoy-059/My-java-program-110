@@ -1,0 +1,50 @@
+package Main;
+
+public class CourseClass {
+    private String courseName;
+    private String[] students = new String[100];
+    private int numberOfStudents = 0;
+
+    public CourseClass(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public String getCourseName() {
+        return this.courseName;
+    }
+
+    public void addStudent(String student) {
+        this.students[this.numberOfStudents] = student;
+        this.numberOfStudents++;
+    }
+
+    public void dropStudent(String student) {
+        int i = 0;
+        boolean found = false;
+
+        while (i < this.numberOfStudents) {
+            if (!found && this.students[i].equals(student)) {
+                found = true; 
+            }
+
+            if (found && i < this.numberOfStudents - 1) {
+                this.students[i] = this.students[i + 1];
+            }
+
+            i++;
+        }
+
+        if (found) {
+            this.students[this.numberOfStudents - 1] = null;
+            this.numberOfStudents--;
+        }
+    }
+
+    public String[] getStudents() {
+        return this.students;
+    }
+
+    public int getNumberOfStudents() {
+        return this.numberOfStudents;
+    }
+}
